@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POP IT - Tienda Antiestrés</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="header__container">
+        <h2 class="header__logo">POP IT</h2>
+
+        <!-- Botón menú hamburguesa para celulares -->
+        <button class="header__burger" id="burger" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- Menú de navegación -->
+        <nav class="header__nav" id="menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#about">¿Qué es?</a>
+          <a href="#productos">Productos</a>
+          <a href="#reglas">Reglas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__container">
+        <div>
+          <h1 class="hero__title">POP IT!</h1>
+
+          <p class="hero__text">
+            ¡La mejor juguete antiestrés! Burbujas de silicona infinitas para
+            presionar y divertirte.
+          </p>
+
+          <a href="#productos" class="hero__button"> COMPRAR </a>
+        </div>
+
+        <img
+          src="assets/images/popsicle.png"
+          alt="Pop It Paleta de Helado"
+          class="hero__image"
+        />
+      </div>
+    </section>
+
+    <!-- ACERCA DE -->
+    <section class="about" id="about">
+      <h2 class="about__title">¿Qué es Pop It?</h2>
+
+      <p class="about__text">
+        Pop it se traduce literalmente como «explótalo». Es un juego sensorial
+        donde puedes presionar burbujas con un sonido y sensación súper
+        relajante. A diferencia del plástico de burbujas común, ¡puedes
+        voltearlo y seguir jugando tantas veces como quieras!
+      </p>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="products" id="productos">
+      <h2 class="products__title">¡Elige tu Pop It favorito!</h2>
+
+      <div class="products__grid">
+        <article class="card">
+          <img
+            src="assets/images/square.png"
+            alt="Pop It Cuadrado Multicolor"
+            class="card__image"
+          />
+
+          <p class="card__name">Pop It Cuadrado Multicolor</p>
+
+          <button class="card__button">COMPRAR</button>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/images/amongus.png"
+            alt="Pop It Among Us"
+            class="card__image"
+          />
+
+          <p class="card__name">Pop It Among Us</p>
+
+          <button class="card__button">COMPRAR</button>
+        </article>
+
+        <article class="card">
+          <img
+            src="assets/images/round.png"
+            alt="Pop It Circular Multicolor"
+            class="card__image"
+          />
+
+          <p class="card__name">Pop It Circular Multicolor</p>
+
+          <button class="card__button">COMPRAR</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- REGLAS -->
+    <section class="rules" id="reglas">
+      <div class="rules__container">
+        <div>
+          <h2 class="rules__title">Reglas del Juego</h2>
+
+          <p class="rules__text">
+            Los jugadores toman turnos para presionar burbujas de una misma
+            fila. En cada turno puedes presionar 1, 2 o hasta 3 burbujas
+            (siempre que estén juntas). El objetivo es obligar a tu rival a
+            presionar la última burbuja. ¡El que presione la última burbuja
+            pierde!
+          </p>
+        </div>
+
+        <img
+          src="assets/images/photo.jpg"
+          alt="Niños jugando con Pop It"
+          class="rules__image"
+        />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contacto">
+      <a href="#inicio">POP IT</a>
+      <a href="#productos">Métodos de Pago</a>
+      <a href="#productos">Envíos</a>
+      <a href="#productos">Mayoristas</a>
+      <a href="#contacto">Contacto</a>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

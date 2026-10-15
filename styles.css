@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* HEADER  */
+
+.header {
+  background: #f4bb67;
+  padding: 20px 50px;
+  position: relative;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header__nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.header__nav a:hover {
+  text-decoration: underline;
+}
+
+/* Botón hamburguesa */
+.header__burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header__burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+/* HERO  */
+
+.hero {
+  background: #f4bb67;
+  padding: 50px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.hero__title {
+  font-size: 80px;
+  color: white;
+  font-weight: 900;
+}
+
+.hero__text {
+  color: white;
+  max-width: 400px;
+  margin: 20px 0 30px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.hero__button {
+  display: inline-block;
+  background: #b8e6e4;
+  border: none;
+  padding: 14px 35px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero__button:hover {
+  background: #9fdcd9;
+}
+
+.hero__image {
+  width: 450px;
+}
+
+/* ACERCA DE */
+
+.about {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* PRODUCTOS  */
+
+.products {
+  background: #c8eceb;
+  padding: 80px 20px;
+}
+
+.products__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.card__name {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.card__button {
+  border: none;
+  background: #f4bb67;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  background: #e5a953;
+}
+
+/* REGLAS */
+
+.rules {
+  padding: 80px 20px;
+  background: url("assets/images/bg-grid.png") no-repeat left bottom / contain;
+}
+
+.rules__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rules__title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.rules__text {
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.rules__image {
+  width: 420px;
+  border-radius: 8px;
+}
+
+/* FOOTER */
+
+.footer {
+  background: #333;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+    position: relative;
+    z-index: 100;
+  }
+
+  /* Mostramos el botón hamburguesa */
+  .header__burger {
+    display: flex;
+  }
+
+  .header__nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #f4bb67;
+    padding: 20px;
+    text-align: center;
+    gap: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .header__nav--active {
+    display: flex !important;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero__container,
+  .rules__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__text {
+    max-width: 100%;
+  }
+
+  .hero__image,
+  .rules__image {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .products__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
